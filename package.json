@@ -1,5 +1,5 @@
 {
-  "name": "@revolist/angular-datagrid",
+  "name": "@d.ratzinger/angular-datagrid",
   "description": "Angular data grid spreadsheet",
   "version": "3.0.52",
   "keywords": [
@@ -19,12 +19,12 @@
   "author": "revolist",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/revolist/angular-datagrid.git"
+    "url": "git+https://github.com/dratzinger/angular-datagrid.git"
   },
   "bugs": {
-    "url": "https://github.com/revolist/angular-datagrid/issues"
+    "url": "https://github.com/dratzinger/angular-datagrid/issues"
   },
-  "homepage": "https://github.com/revolist/angular-datagrid#readme",
+  "homepage": "https://github.com/dratzinger/angular-datagrid#readme",
   "license": "MIT",
   "scripts": {
     "build": "npm run build.ng",
