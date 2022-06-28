@@ -1,7 +1,7 @@
-import { NgModule } from "@angular/core";
-import { defineCustomElements } from "@revolist/revogrid/loader";
+import { NgModule } from '@angular/core';
+import { defineCustomElements } from '@revolist/revogrid/loader';
 
-import { RevoGrid } from "./proxies/revogrid";
+import { RevoGrid } from './proxies/revogrid';
 
 defineCustomElements(window);
 
