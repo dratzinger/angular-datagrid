@@ -1,5 +1,5 @@
 {
-  "name": "angular-datagrid",
+  "name": "@d.ratzinger/angular-datagrid",
   "version": "3.6.5",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
