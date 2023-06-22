@@ -5,6 +5,7 @@
 </p>
 
 ##
+
 <p align="center">
   <a href="https://www.npmjs.com/package/@d.ratzinger/angular-datagrid"><img src="https://img.shields.io/npm/v/@d.ratzinger/angular-datagrid" alt="Latest Version on NPM"/></a>
   <a href="https://github.com/revolist/revogrid/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@revolist/revogrid" alt="Software License"/></a>
@@ -26,7 +27,6 @@ Millions of cells and thousands columns easy and efficiently.
 <img src="https://raw.githubusercontent.com/revolist/revogrid/master/assets/material.jpg" alt="Material grid preview" width="100%" />
 <i>RevoGrid material theme.</i>
 <br>
-
 
 ## Key Features
 
@@ -74,12 +74,12 @@ Millions of cells and thousands columns easy and efficiently.
 - Plugin system (create your own plugins or extend existing one, it's transparent and easy);
 - Hundred others small customizations and improvements [RevoGrid](https://revolist.github.io/revogrid).
 
-
 ## How to use
 
 Use [Repo](https://github.com/revolist/angular-datagrid-test) as a started if you wish.
 
 With NPM:
+
 ```bash
 npm i @revolist/angular-datagrid --save;
 ```
@@ -92,11 +92,11 @@ yarn add @revolist/angular-datagrid;
 
 ```ts
 // app.module.ts
- 
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
 
-import { AppComponent } from "./app.component";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
 import { RevoGridModule } from '@revolist/angular-datagrid';
 
 @NgModule({
@@ -104,7 +104,7 @@ import { RevoGridModule } from '@revolist/angular-datagrid';
   declarations: [AppComponent],
   imports: [BrowserModule, RevoGridModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
 ```
@@ -112,36 +112,33 @@ export class AppModule {}
 ```ts
 // app.component.ts
 
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  columns = [
-    {  name: "Greeting", prop: "name" },
-    { prop: "details" }
+  columns = [{ name: 'Greeting', prop: 'name' }, { prop: 'details' }];
+  rows = [
+    { name: 'I am', details: 'Angular' },
+    { name: 'Hello', details: 'Angular' },
   ];
-  rows = [{ name: "I am", details: "Angular" }, { name: "Hello", details: "Angular" }];
 }
 ```
 
 ```html
 <!-- app.component.html -->
 <revo-grid [source]="rows" [columns]="columns" theme="material"></revo-grid>
-
 ```
-Check [Sandbox](https://codesandbox.io/s/angular-datagrid-overview-d5i0b?fontsize=14&hidenavigation=1&theme=dark) for real live sample.
 
+Check [Sandbox](https://codesandbox.io/s/angular-datagrid-overview-d5i0b?fontsize=14&hidenavigation=1&theme=dark) for real live sample.
 
 ## Contributing
 
 If you have any idea, feel free to open an issue to discuss a new feature and submit your changes back to me.
 
-
 ## License
 
 MIT
-

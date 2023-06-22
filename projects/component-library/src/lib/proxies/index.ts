@@ -1,8 +1,7 @@
-
 import * as d from './revogrid';
 
 export const DIRECTIVES = [
-d.RevoGrid,
+  d.RevoGrid,
   d.RevogrClipboard,
   d.RevogrData,
   d.RevogrEdit,
@@ -14,5 +13,5 @@ d.RevoGrid,
   d.RevogrRowHeaders,
   d.RevogrScrollVirtual,
   d.RevogrTempRange,
-  d.RevogrViewportScroll
+  d.RevogrViewportScroll,
 ];
