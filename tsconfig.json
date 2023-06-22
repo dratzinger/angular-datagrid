@@ -1,37 +1,33 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "angularCompilerOptions": {
-    "annotateForClosureCompiler": true,
-    "strictMetadataEmit": true,
-    "flatModuleOutFile": "core.js",
-    "flatModuleId": "@revolist/angular-datagrid",
-    "skipTemplateCodegen": true,
-    "fullTemplateTypeCheck": false
-  },
+  "compileOnSave": false,
   "compilerOptions": {
-    "alwaysStrict": true,
-    "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "declaration": true,
-    "declarationDir": "dist",
-    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "component-library": [
+        "dist/component-library/component-library",
+        "dist/component-library"
+      ]
+    },
+    "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "lib": ["dom", "es2017"],
-    "module": "es2015",
-    "moduleResolution": "node",
-    "noImplicitAny": true,
+    "strict": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "outDir": "build/es2015",
-    "pretty": true,
-    "removeComments": false,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
     "importHelpers": true,
-    "rootDir": "src",
-    "strictPropertyInitialization": false,
-    "target": "es2015",
-    "skipLibCheck": true
+    "target": "es2017",
+    "module": "es2020",
+    "lib": ["es2018", "dom"]
   },
-  "exclude": ["node_modules"],
-  "files": ["src/index.ts"]
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }

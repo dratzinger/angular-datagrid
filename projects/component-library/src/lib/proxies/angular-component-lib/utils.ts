@@ -1,4 +1,4 @@
-import { fromEvent } from 'rxjs';
+import { fromEvent } from "rxjs";
 
 export const proxyInputs = (Cmp: any, inputs: string[]) => {
   const Prototype = Cmp.prototype;
@@ -19,13 +19,17 @@ export const proxyMethods = (Cmp: any, methods: string[]) => {
   methods.forEach((methodName) => {
     Prototype[methodName] = function () {
       const args = arguments;
-      return this.z.runOutsideAngular(() => this.el[methodName].apply(this.el, args));
+      return this.z.runOutsideAngular(() =>
+        this.el[methodName].apply(this.el, args)
+      );
     };
   });
 };
 
 export const proxyOutputs = (instance: any, el: any, events: string[]) => {
-  events.forEach((eventName) => (instance[eventName] = fromEvent(el, eventName)));
+  events.forEach(
+    (eventName) => (instance[eventName] = fromEvent(el, eventName))
+  );
 };
 
 // tslint:disable-next-line: only-arrow-functions
